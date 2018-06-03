@@ -1,6 +1,5 @@
 server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
+  listen 80;
   root /var/www/kmiho.com;
   index index.html;
   server_name kmiho.com www.kmiho.com;
