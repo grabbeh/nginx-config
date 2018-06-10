@@ -1,10 +1,10 @@
 
-# Default server configuration
-#
 server {
-	listen 80;
-	server_name grabeh.net www.grabeh.net;
-	location / {
-		proxy_pass http://127.0.0.1:3001;
-	}
+  listen 80;
+  root /var/www/grabeh.net/public;
+  index index.html;
+  server_name grabeh.net www.grabeh.net;
+  location / {
+    try_files $uri $uri/ =404;
+  }
 }
