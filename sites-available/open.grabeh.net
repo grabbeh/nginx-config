@@ -1,0 +1,8 @@
+server {
+  listen 80;
+  root /var/www/docs/dist;
+  index index.html;
+  server_name open.grabeh.net;
+  location / {
+    try_files $uri $uri/ =404;
+  }
