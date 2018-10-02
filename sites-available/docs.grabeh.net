@@ -3,6 +3,7 @@ server {
   root /var/www/docs.grabeh.net/.docz/dist;
   index index.html;
   server_name docs.grabeh.net www.docs.grabeh.net;
+  rewrite  ^/$  /index.html  last;
   location / {
     try_files $uri $uri/ =404;
   }
