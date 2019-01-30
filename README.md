@@ -8,8 +8,8 @@ To add new site:
 - Git pull from VPS
 - Create symlink using below command:
 
-```sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+    sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
     
 - Then restart nginx using:
 
-```systemctl restart nginx
+    systemctl restart nginx
