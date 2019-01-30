@@ -1,0 +1,9 @@
+server {
+  listen 80;
+  root /var/www/docs.grabeh.net/.docz/dist;
+  index index.html;
+  server_name docs.mbg.codes www.docs.mbg.codes;
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
