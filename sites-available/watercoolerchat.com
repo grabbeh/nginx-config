@@ -1,5 +1,5 @@
 server {
-	server_name 207.154.247.21;
+	server_name watercoolerchat.com www.watercoolerchat.com;
 	location / {
 		proxy_pass http://127.0.0.1:6000;
 	}
