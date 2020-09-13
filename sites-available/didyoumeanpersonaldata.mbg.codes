@@ -1,0 +1,6 @@
+server {
+	server_name didyoumeanpersonaldata.mbg.codes www.didyoumeanpersonaldata.mbg.codes;
+	location / {
+		proxy_pass http://127.0.0.1:7000;
+	}
+}
